@@ -2,10 +2,70 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.logo {
   pointer-events: none;
+  padding: 5px;
+  width: 50px;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0px 20px;
+  box-shadow: 0px 1px 3px 0px #e7e6e6;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 10px;
+}
+.nav-links li {
+padding: 10px;
+
+}
+
+li.nav-item:hover {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+ul.nav-links li a {
+  text-decoration: none;
+}
+
+.cart-item {
+  display: flex;
+  height: 60px;
+  width: 80px;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #e3e2e2;
+}
+
+img.icon-cart {
+  width: 20px;
+  padding: 5px;
+}
+
+span.number {
+  background-color: #ff4242;
+  display: flex;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  font-size: 13px;
+  color: #fff;
+}
+
+.ListContainer {
+  padding: 100px;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
