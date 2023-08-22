@@ -1,26 +1,25 @@
 import React from 'react'
 import logo from './logo.png';
 import CartWidget from '../CartWidget/CartWidget'
+import { Link, NavLink } from 'react-router-dom';
+
 
 
 const Navbar = () => {
   return (
-    <nav className='navbar'>
-        <div>
-            <img src={logo} className="logo" alt="logo" />
-            </div>
-     <ul className="nav-links">
-     <li className="nav-item"><a href="/">Inicio</a></li>
-      <li className="nav-item"><a href="/">Nosotros</a></li>
-      <li className="nav-item"><a href="/">Gravel</a></li>
-      <li className="nav-item"><a href="/">Montaña</a></li>
-      <li className="nav-item"><a href="/">Ruta</a></li>
-      <li className="nav-item"><a href="/">Contacto</a></li>
-    </ul>
-    <div>
-        <CartWidget/>
-    </div>
-    </nav>
+    
+          <nav className='navbar'>    
+          <Link to='/'> <img src={logo} className="logo" alt="logo" /></Link>         
+          <div className="nav-links">
+          <NavLink to={'/'} className='nav-item'>Inicio</NavLink>
+          <NavLink to={`/category/gravel`} className='nav-item'> Gravel</NavLink>
+          <NavLink to={`/category/montana`} className='nav-item'> Montaña</NavLink>
+          <NavLink to={`/category/ruta`} className='nav-item'>Ruta</NavLink>
+          </div>
+          <div>
+          <CartWidget/>
+          </div>
+          </nav>
   )
 }
 
