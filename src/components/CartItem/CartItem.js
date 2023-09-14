@@ -6,10 +6,7 @@ import CartContext from '../../context/CartContext';
 function CartItem({ name, img, price, id, quantity }) {
 
   const {removeItem, cart} = useContext(CartContext)
- 
 
-
-  console.log(cart)
 
   return (
     <div className='cartContainer'>
