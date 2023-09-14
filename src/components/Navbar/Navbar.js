@@ -12,8 +12,8 @@ const Navbar = () => {
           <Link to='/'> <img src={logo} className="logo" alt="logo" /></Link>         
           <div className="nav-links">
           <NavLink to={'/'} className='nav-item'>Inicio</NavLink>
-          <NavLink to={`/category/gravel`} className='nav-item'> Gravel</NavLink>
-          <NavLink to={`/category/montana`} className='nav-item'> Montaña</NavLink>
+          <NavLink to={`/category/ebike`} className='nav-item'> E-bike</NavLink>
+          <NavLink to={`/category/mtb`} className='nav-item'> Montaña</NavLink>
           <NavLink to={`/category/ruta`} className='nav-item'>Ruta</NavLink>
           </div>
           <div>
