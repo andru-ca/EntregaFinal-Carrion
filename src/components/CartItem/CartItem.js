@@ -5,7 +5,7 @@ import CartContext from '../../context/CartContext';
 
 function CartItem({ name, img, price, id, quantity }) {
 
-  const {removeItem, cart} = useContext(CartContext)
+  const {removeItem} = useContext(CartContext)
 
 
   return (
